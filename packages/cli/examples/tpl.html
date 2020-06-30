@@ -1,0 +1,55 @@
+<Row className='p-barrier'>
+    <Col className='l-left'>
+      <Row className='BarrierScreen-banner'>
+        <Col className='BarrierScreen-subscribe'>
+          <BarrierScreenSubscribe props="barrierScreenSubscribeData" />
+        </Col>
+        <Col className='BarrierScreen-summary'>
+          <BarrierScreenSummary props="barrierScreenSummaryData" />
+        </Col>
+        <Col className="BarrierScreen-location">
+          <BarrierScreenLocation props="BarrierScreenLocationData" />
+        </Col>
+      </Row>
+      <Row className="BarrierScreen-content">
+        <BarrierScreenContent props="BarrierScreenContentData"/>
+      </Row>
+  
+      <Row className="CaptureWall">
+        <Row className="CaptureWall-banner">
+          <CaptureWallBanner props="CaptureWallBannerData"/>
+        </Row>
+  
+        <Row className={"CaptureWall-content"}>
+          <Slider props="SliderData"/>
+        </Row>
+      </Row>
+    </Col>
+  
+    <Col className='l-right'>
+      <Row className="AlertWall">
+        <Row className="AlertWall-banner">
+          <AlertSubscription
+            props="AlertSubscriptionData"
+          />
+  
+          <Col className="AlertWall-summary">
+            <AlertWallSummary props="AlertWallSummaryData"/>
+          </Col>
+  
+          <Col className="AllAlertLink">
+            <AlertLink props="AlertLinkData"/>
+          </Col>
+        </Row>
+  
+        <Row className={"AlertWall-filter"}>
+          <AlertWallFilter props="AlertWallFilterData"/>
+        </Row>
+  
+        <Row className={"AlertWall-content"}>
+          <AlertWallList props="AlertWallListData"/>
+        </Row>
+          
+      </Row>
+    </Col>
+  </Row>

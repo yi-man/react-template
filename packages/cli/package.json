@@ -1,0 +1,36 @@
+{
+  "name": "@yds/react-template-cli",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "bin": {
+    "react-template-cli": "lib/index.js"
+  },
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "pluginTemplate"
+  ],
+  "scripts": {
+    "build": "tsc -d",
+    "watch": "tsc -d -w",
+    "init-page": "node lib/index.js examples/",
+    "init-patch": "node lib/index.js --init",
+    "prepublish": "yarn run build"
+  },
+  "devDependencies": {
+    "@types/js-beautify": "^1.8.1",
+    "@types/node": "^12.11.6",
+    "@types/shelljs": "^0.8.5",
+    "@types/yargs": "^13.0.3"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "js-beautify": "^1.10.2",
+    "ora": "^4.0.2",
+    "shelljs": "^0.8.3",
+    "signale": "^1.4.0",
+    "@yds/react-template": "^0.2.0",
+    "yargs": "^14.2.0"
+  }
+}

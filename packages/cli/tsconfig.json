@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "lib",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es6", "dom", "es2017"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
+    "experimentalDecorators": true,
+    "noErrorTruncation": false
+  },
+  "include": [
+    "./src/**/*",
+    "./declare/npm.d.ts", "pluginTemplate"
+  ],
+  "exclude": [
+    "./examples/**",
+    "pluginTemplate"
+  ]
+}

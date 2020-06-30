@@ -1,0 +1,27 @@
+.p-barrier {
+  .l-left {
+    .BarrierScreen-banner {
+      .BarrierScreen-subscribe {}
+
+      .BarrierScreen-summary {}
+
+      .BarrierScreen-location {}
+    }
+
+    .BarrierScreen-content {}
+
+    .CaptureWall {
+      .CaptureWall-banner {}
+    }
+  }
+
+  .l-right {
+    .AlertWall {
+      .AlertWall-banner {
+        .AlertWall-summary {}
+
+        .AllAlertLink {}
+      }
+    }
+  }
+}
